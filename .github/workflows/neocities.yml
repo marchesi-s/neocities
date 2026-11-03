@@ -1,4 +1,4 @@
-name: Deploy to Neocities
+name: Deploy to neocities
 
 on:
   push:
@@ -8,6 +8,10 @@ on:
 concurrency:
   group: neocities-deploy
   cancel-in-progress: true
+
+env:
+  # This stops GitHub from showing the confusing Node.js warning spam
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true 
 
 jobs:
   deploy:
@@ -20,4 +24,4 @@ jobs:
       with:
         api_key: ${{ secrets.NEOCITIES_API_TOKEN }}
         cleanup: true
-        dist_dir: .
+        dist_dir: public
