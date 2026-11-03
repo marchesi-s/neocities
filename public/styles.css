@@ -1,0 +1,45 @@
+
+/*these are global properties*/
+
+body {
+  background-image: url("images/leaves.gif");
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0px 0px 2px #7F5555;
+
+}
+
+
+/*these are div-specific properties*/
+.page-title {
+  text-shadow: 3px 3px #FF4B33;
+  font-size:60px;
+  }
+  
+.hippo-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* horizontally center */
+  align-items: center;     /* vertically center */
+  height: auto;
+  padding: 40px;
+}
+
+.hippo-card-container {
+  border: 2px solid red;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px
+  
+}
+
+.hippo-contents {
+  border: 2px solid brown;
+  padding: 10px 40px;
+}
+
+.hippo-card {
+  border: 2px solid brown;
+  flex-grow: 1;
+  padding: 10px 40px;
+}
