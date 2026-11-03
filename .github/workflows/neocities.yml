@@ -19,4 +19,3 @@ jobs:
           api_token: ${{ secrets.9bb4b8a274c9bf1031160b1c5212c625 }}
           cleanup: false
           dist_dir: public
-Save your file.
