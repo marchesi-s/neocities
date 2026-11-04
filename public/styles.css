@@ -18,19 +18,35 @@ body {
 .hippo-card-container {
   border: 8px ridge red;
   padding: 10px;
-  display: inline-flex;
-  justify-content: flex-start;
+  display: inline-grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-rows: auto; 
   gap: 10px; 
 }
 
 .hippo-contents {
   border: 4px ridge black;
   padding: 20px;
+  flex-grow: 1;
+
 }
 
 .hippo-card {
   border: 4px ridge black;
-  flex: 0 0 auto; /* or explicitly: flex-grow: 0; flex-shrink: 0; flex-basis: auto; */
+  display: flex;
+  flex-direction: column;
   padding: 20px;
-  max-width: 600px;
+  
 }
+
+/*Goodreads*/
+
+  .gr_custom_book_container {
+    /* customize your book covers here */
+    flex-direction: row;
+  }
+
+  .gr_custom_author{
+    /* customize your author names here */
+    font-size: 10px;
+  }
