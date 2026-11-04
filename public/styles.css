@@ -4,42 +4,32 @@
 body {
   background-image: url("images/leaves.gif");
   font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 0px 0px 2px #7F5555;
+  text-shadow: 0px 0px 1.5px #7F5555;
+  margin: 40px;
 }
 
 
 /*these are div-specific properties*/
 .page-title {
-  text-shadow: 2px 2px #FF4B33;
+  text-shadow: 1px 1px 2px #FF4B33;
   font-size:40px;
   }
-  
-.hippo-page-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* horizontally center */
-  align-items: center;     /* vertically center */
-  height: auto;
-  
-}
 
 .hippo-card-container {
-  border: 2px solid red;
+  border: 8px ridge red;
   padding: 10px;
   display: inline-flex;
   justify-content: flex-start;
-  gap: 10px;
-  margin: 40px;
-  
+  gap: 10px; 
 }
 
 .hippo-contents {
-  border: 2px solid brown;
+  border: 4px ridge black;
   padding: 20px;
 }
 
 .hippo-card {
-  border: 2px solid brown;
+  border: 4px ridge black;
   flex: 0 0 auto; /* or explicitly: flex-grow: 0; flex-shrink: 0; flex-basis: auto; */
   padding: 20px;
   max-width: 600px;
