@@ -20,7 +20,7 @@ body {
   justify-content: center; /* horizontally center */
   align-items: center;     /* vertically center */
   height: auto;
-  padding: 40px;
+  
 }
 
 .hippo-card-container {
@@ -28,7 +28,8 @@ body {
   padding: 10px;
   display: inline-flex;
   justify-content: flex-start;
-  gap: 10px
+  gap: 10px;
+  margin: 40px;
   
 }
 
